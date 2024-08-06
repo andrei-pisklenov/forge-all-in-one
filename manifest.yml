@@ -1,0 +1,121 @@
+modules:
+  jira:adminPage:
+    - key: forge-admin-page
+      resource: ui
+      title: forge-admin-page title
+      resolver: 
+        function: resolver
+    - key: forge-configure-page
+      resource: ui
+      title: forge-configure-page title
+      resolver: 
+        function: resolver
+      useAsConfig: true
+    - key: forge-get-started-page
+      resource: ui
+      title: forge-get-started-page title
+      resolver: 
+        function: resolver
+      useAsGetStarted: true
+  jira:customField:
+    - key: forge-cf-string
+      name: forge-cf-string name
+      description: forge-cf-string description
+      type: number
+  jira:customFieldType:
+  - key: forge-cf-type
+    name: forge-cf-type name
+    description: forge-cf-type description
+    type: number
+  jira:dashboardGadget:
+    - key: forge-gadget
+      title: forge-gadget title
+      description: forge-gadget description
+      thumbnail: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+      resource: ui
+      resolver:
+        function: resolver
+      edit:
+        resource: ui
+  jira:globalPage:
+    - key: forge-global-page
+      resource: ui
+      resolver:
+        function: resolver
+      title: forge-global-page title
+  jira:issueAction:
+    - key: forge-issue-action
+      resource: ui
+      resolver:
+        function: resolver
+      title: forge-issue-action title
+  jira:issueActivity:
+    - key: forge-issue-activity
+      resource: ui
+      resolver:
+        function: resolver
+      title: forge-issue-activity title
+  jira:issueContext:
+    - key: forge-issue-context
+      resource: ui
+      resolver:
+        function: resolver
+      title: forge-issue-context title
+      description: forge-issue-context description
+      label: forge-issue-context
+  jira:issuePanel:
+    - key: forge-issue-panel
+      resource: ui
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: forge-issue-panel title
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+  jira:projectPage:
+    - key: forge-project-page
+      resource: ui
+      resolver:
+        function: resolver
+      title: forge-project-page title
+  jira:projectSettingsPage:
+    - key: forge-project-settings-page
+      resource: ui
+      resolver:
+        function: resolver
+      title: forge-project-settings-page title
+  jira:workflowValidator:
+    - key: forge-workflow-validator
+      name: forge-workflow-validator name
+      description: forge-workflow-validator description
+      expression: "true"
+  jira:workflowCondition:
+    - key: forge-workflow-condition
+      name: forge-workflow-condition name
+      description: forge-workflow-condition description
+      expression: "true"
+  jira:workflowPostFunction:
+    - key: forge-workflow-post-function
+      name: forge-workflow-post-function name
+      description: forge-workflow-post-function description
+      function: postfunction
+      edit:
+        resource: ui
+      create:
+        resource: ui
+      view:
+        resource: ui
+  function:
+    - key: resolver
+      handler: index.handler
+    - key: postfunction
+      handler: index.postfunction
+resources:
+  - key: ui
+    path: static/ui/build
+permissions:
+  scopes:
+    - read:jira-work
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/929aacb7-8557-4706-a3c0-385ce9d54184
