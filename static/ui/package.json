@@ -1,6 +1,6 @@
 {
-  "name": "jira-issue-panel-custom-ui-static",
-  "version": "0.2.22",
+  "name": "forge-all-in-one-ui",
+  "version": "0.0.0",
   "private": true,
   "homepage": ".",
   "dependencies": {

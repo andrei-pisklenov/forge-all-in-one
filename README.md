@@ -1,6 +1,6 @@
 # Forge All-in-One Modules for Jira
 
-This "just for fun" project demonstrates how to incorporate **all** Forge modules for Jira into a single app. While created primarily for entertainment, it can be highly beneficial for Forge developers. By showcasing every possible location in the Jira UI where Forge can be extended, this app allows you to install it on your cloud development instance and gain insights into which Forge modules best suit your development needs.
+This "just for fun" project demonstrates how to incorporate **all** [Forge modules](https://developer.atlassian.com/platform/forge/manifest-reference/modules/) for Jira and Confluence into a single app. While created primarily for entertainment, it can be highly beneficial for Forge developers. By showcasing every possible location in the Jira and Confluence UI where Forge can be extended, this app allows you to install it on your cloud development instance and gain insights into which Forge modules best suit your development needs.
 
 For documentation and tutorials on Forge, visit [developer.atlassian.com/platform/forge/](https://developer.atlassian.com/platform/forge).
 
@@ -15,7 +15,7 @@ To get started, follow the instructions to set up Forge: [Set up Forge](https://
     yarn
     ```
 
-2. **Install dependencies inside the `static/ui` directory:**
+2. **Install dependencies (inside the `static/ui` directory):**
     ```bash
     cd static/ui
     yarn
@@ -26,13 +26,17 @@ To get started, follow the instructions to set up Forge: [Set up Forge](https://
     yarn build
     ```
 
-4. **Deploy your app:**
+4. **Register your app (from root folder):**
     ```bash
-    cd ../..
+    forge register
+    ```
+
+5. **Deploy your app (from root folder):**
+    ```bash
     forge deploy
     ```
 
-5. **Install your app on an Atlassian site:**
+6. **Install your app on an Atlassian site (from root folder):**
     ```bash
     forge install
     ```
