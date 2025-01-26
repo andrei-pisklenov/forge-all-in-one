@@ -1,4 +1,4 @@
-# Forge All-in-One Modules for Jira
+# Forge All-in-One Modules for Jira and Confluence
 
 This "just for fun" project demonstrates how to incorporate **all** [Forge modules](https://developer.atlassian.com/platform/forge/manifest-reference/modules/) for Jira and Confluence into a single app. While created primarily for entertainment, it can be highly beneficial for Forge developers. By showcasing every possible location in the Jira and Confluence UI where Forge can be extended, this app allows you to install it on your cloud development instance and gain insights into which Forge modules best suit your development needs.
 

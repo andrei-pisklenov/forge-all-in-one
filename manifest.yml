@@ -110,7 +110,7 @@ modules:
   ##########################
   #   Confluence modules   #
   ##########################
-  confluence:globalSettings:
+  confluence:globalSettings: # https://developer.atlassian.com/platform/forge/manifest-reference/modules/confluence-global-page/
     - key: confluence-globalSettings
       resource: ui
       resolver:
@@ -128,35 +128,35 @@ modules:
         function: resolver
       title: "confluence:globalSettings useAsGetStarted: true"
       useAsGetStarted: true
-  confluence:contentAction:
+  confluence:contentAction: # https://developer.atlassian.com/platform/forge/manifest-reference/modules/confluence-content-action/
     - key: confluence-contentAction
       resource: ui
       resolver:
         function: resolver
       viewportSize: medium
       title: confluence:contentAction
-  confluence:spacePage:
+  confluence:spacePage: # https://developer.atlassian.com/platform/forge/manifest-reference/modules/confluence-space-page/
     - key: confluence-spacePage
       resource: ui
       resolver:
         function: resolver
       title: confluence:spacePage
       route: confluence-spacePage
-  confluence:spaceSettings:
+  confluence:spaceSettings: # https://developer.atlassian.com/platform/forge/manifest-reference/modules/confluence-space-settings/
     - key: confluence-spaceSettings
       resource: ui
       resolver:
         function: resolver
       title: confluence:spaceSettings
       route: confluence-spaceSettings
-  confluence:contentBylineItem:
+  confluence:contentBylineItem: # https://developer.atlassian.com/platform/forge/manifest-reference/modules/confluence-content-byline-item/
     - key: confluence-contentBylineItem
       resource: ui
       resolver:
         function: resolver
       viewportSize: large
       title: confluence:contentBylineItem
-  macro:
+  macro: # https://developer.atlassian.com/platform/forge/manifest-reference/modules/macro/
     - key: macro
       resource: ui
       resolver:
